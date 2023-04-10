@@ -1,0 +1,127 @@
+
+
+{% block content %}
+
+    <div id="content" class="bg-image  d-flex align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="container">
+        <h1 class="text-white text-center mb-8">추천 여행지</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{ url_for('static', filename=image_list[0]) }}" class="img-fluid rounded-start" style="height: 140px;" onload="resize(this)">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title" >{{place_list[0]}}</h5>
+                    <p class="card-text">
+                      <a href={{ url_list[0] }}> {{ tag_list[0][0] }}  </a><br>
+                      <a href={{ url_list[0] }}> {{ tag_list[0][1] }}  </a><br>
+                      <a href={{ url_list[0] }}> {{ tag_list[0][2] }}  </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{ url_for('static', filename=image_list[1]) }}" class="img-fluid rounded-start" style="height: 140px;" onload="resize(this)">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{place_list[1]}}</h5>
+                    <p class="card-text">
+                      <a href={{ url_list[1] }}> {{ tag_list[1][0] }}  </a><br>
+                      <a href={{ url_list[1] }}> {{ tag_list[1][1] }}  </a><br>
+                      <a href={{ url_list[1] }}> {{ tag_list[1][2] }}  </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{ url_for('static', filename=image_list[2]) }}" class="img-fluid rounded-start" style="height: 140px;" onload="resize(this)">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{place_list[2]}}</h5>
+                    <p class="card-text">
+                      <a href={{ url_list[2] }}> {{ tag_list[2][0] }}  </a><br>
+                      <a href={{ url_list[2] }}> {{ tag_list[2][1] }}  </a><br>
+                      <a href={{ url_list[2] }}> {{ tag_list[2][2] }}  </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{ url_for('static', filename=image_list[3]) }}" class="img-fluid rounded-start" style="height: 140px;" onload="resize(this)">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{place_list[3]}}</h5>
+                    <p class="card-text">
+                      <a href={{ url_list[3] }}> {{ tag_list[3][0] }}  </a><br>
+                      <a href={{ url_list[3] }}> {{ tag_list[3][1] }}  </a><br>
+                      <a href={{ url_list[3] }}> {{ tag_list[3][2] }}  </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{ url_for('static', filename=image_list[4]) }}" class="img-fluid rounded-start" style="height: 140px;" onload="resize(this)">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{place_list[4]}}</h5>
+                    <p class="card-text">
+                      <a href={{ url_list[4] }}> {{ tag_list[4][0] }}  </a><br>
+                      <a href={{ url_list[4] }}> {{ tag_list[4][1] }}  </a><br>
+                      <a href={{ url_list[4] }}> {{ tag_list[4][2] }}  </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{ url_for('static', filename=image_list[5]) }}" class="img-fluid rounded-start" style="height: 140px;" onload="resize(this)">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{place_list[5]}}</h5>
+                    <p class="card-text">
+                      <a href={{ url_list[5] }}> {{ tag_list[5][0] }}  </a><br>
+                      <a href={{ url_list[5] }}> {{ tag_list[5][1] }}  </a><br>
+                      <a href={{ url_list[5] }}> {{ tag_list[5][2] }}  </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
